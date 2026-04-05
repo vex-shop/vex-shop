@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tedeapolis Remake Server Details - Raytrix Scripts">
+    <link rel="canonical" href="https://www.raytrix.nl/server-tedeapolis">
+    <meta name="theme-color" content="#3b82f6">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Raytrix Scripts">
+    <meta property="og:title" content="Tedeapolis Remake Details Raytrix Scripts">
+    <meta property="og:description" content="Bekijk alle features en screenshots van de Tedeapolis Remake server met volledig werkende systemen.">
+    <meta property="og:url" content="https://www.raytrix.nl/server-tedeapolis">
+    <meta property="og:image" content="https://www.raytrix.nl/assets/images/raytrixpng.png?v=2">
+    <title>Tedeapolis Remake Details - Raytrix Scripts</title>
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Server Detail Page Styles */
+        .server-detail-hero {
+            position: relative;
+            padding: 100px 0 60px;
+            background:
+                radial-gradient(1100px 600px at 85% 35%, rgba(59,130,246,0.15) 0%, rgba(59,130,246,0) 60%),
+                radial-gradient(900px 520px at 15% 70%, rgba(96,165,250,0.14) 0%, rgba(96,165,250,0) 65%),
+                linear-gradient(135deg, #93c5fd 0%, #3b82f6 55%, #60a5fa 100%);
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .server-detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(255,255,255,0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .server-detail-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .back-button:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateX(-4px);
+        }
+
+        .server-detail-header {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .server-detail-header h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(255,255,255,0.2);
+        }
+
+        .server-detail-header p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.95);
+            max-width: 750px;
+            margin: 0 auto 30px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .server-badges {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .server-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.4);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .server-badge:hover {
+            background: rgba(255,255,255,0.35);
+            transform: translateY(-2px);
+        }
+
+        /* Features Section with Accordion */
+        .features-section {
+            padding: 60px 0;
+            background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .accordion-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .accordion-item {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 2px solid #e2e8f0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item.active {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+        }
+
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background: #f8fafc;
+        }
+
+        .accordion-item.active .accordion-header {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        }
+
+        .accordion-title-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex: 1;
+        }
+
+        .accordion-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .accordion-title-text h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0 0 4px 0;
+        }
+
+        .accordion-title-text p {
+            font-size: 13px;
+            color: #64748b;
+            margin: 0;
+        }
+
+        .accordion-toggle {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e2e8f0;
+            border-radius: 8px;
+            color: #64748b;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .accordion-item.active .accordion-toggle {
+            background: #3b82f6;
+            color: #ffffff;
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 2000px;
+        }
+
+        .accordion-body {
+            padding: 0 24px 24px 24px;
+        }
+
+        .accordion-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .accordion-gallery.single {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+        }
+
+        .accordion-gallery.double {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f8fafc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+            height: 280px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: #3b82f6;
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(96, 165, 250, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+
+        .gallery-item::after {
+            content: 'Klik om te vergroten';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+            pointer-events: none;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            animation: zoomIn 0.3s ease;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10000;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255,255,255,0.3);
+            transform: rotate(90deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-content h2 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .cta-content p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 35px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-price-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 32px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .cta-price-box .price-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-price-box .price-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 36px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+        }
+
+        .cta-btn-primary {
+            background: #ffffff;
+            color: #3b82f6;
+            box-shadow: 0 8px 24px rgba(255,255,255,0.3);
+        }
+
+        .cta-btn-primary:hover {
+            background: #f1f5f9;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255,255,255,0.4);
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+
+        .cta-btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.6);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .server-detail-header h1 {
+                font-size: 38px;
+            }
+
+            .accordion-header {
+                padding: 16px 18px;
+            }
+
+            .accordion-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .accordion-title-text h3 {
+                font-size: 16px;
+            }
+
+            .accordion-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .accordion-gallery.double {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-content h2 {
+                font-size: 32px;
+            }
+
+            .cta-price-box .price-value {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">
+                    <img src="../../assets/images/raytrixpng.png" alt="Raytrix Scripts Logo">
+                    <span>Raytrix Scripts</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/producten" class="nav-link">Producten</a>
+                    <a href="/scripts" class="nav-link">Scripts</a>
+                    <a href="/servers" class="nav-link active">Servers</a>
+                    <a href="/websites" class="nav-link">Websites</a>
+                </div>
+                <a href="https://discord.gg/raytrix" class="nav-cta-btn" target="_blank" rel="noopener noreferrer">Start een project</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Server Detail Hero -->
+    <section class="server-detail-hero">
+        <div class="container">
+            <a href="/servers" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                <span>Terug naar Servers</span>
+            </a>
+            <div class="server-detail-header">
+                <h1>Tedeapolis Remake Server</h1>
+                <p>De meest complete en authentieke Tedeapolis server remake. Volledig werkend met professioneel admin-systeem, gangjob, drugs-systeem, politie-systeem en alle andere features. Exact zoals de originele Tedeapolis server.</p>
+                
+                <div class="server-badges">
+                    <span class="server-badge"><i class="fas fa-database"></i> Database Inbegrepen</span>
+                    <span class="server-badge"><i class="fas fa-car"></i> Carpack</span>
+                    <span class="server-badge"><i class="fas fa-tools"></i> Alle Scripts</span>
+                    <span class="server-badge"><i class="fas fa-headset"></i> 24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="accordion-container">
+                
+                <!-- Chat -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Chat</h3>
+                                <p>1:1 met hetzelfde format zoals TDA</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery single">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-1.png" alt="Chat" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gangjob -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-fist-raised"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Gangjob</h3>
+                                <p>Goede gangjob met werkend 100% systeem</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_1.png" alt="Gangjob 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_2.png" alt="Gangjob 2" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_3.png" alt="Gangjob 3" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_4.png" alt="Gangjob 4" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_5.png" alt="Gangjob 5" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_6.png" alt="Gangjob 6" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-2_7.png" alt="Gangjob 7" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Admin Systeem</h3>
+                                <p>Uitgebreid admin-systeem met meerdere setgroups</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_1.png" alt="Admin 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_2.png" alt="Admin 2" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_3.png" alt="Admin 3" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_4.png" alt="Admin 4" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_5.png" alt="Admin 5" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_6.png" alt="Admin 6" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-3_7.png" alt="Admin 7" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carpack -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-car-side"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Carpack</h3>
+                                <p>1:1 cardealer met lore-friendly voertuigen</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery single">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-4.png" alt="Carpack" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drugs -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Drugs Systeem</h3>
+                                <p>Werkend drugs-systeem met pluks en verkoop</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery double">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-5_1.png" alt="Drugs 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-5_2.png" alt="Drugs 2" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Politie -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-shield"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Politie Job</h3>
+                                <p>Volledig werkende politiejob met porto</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-6_1.png" alt="Politie 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-6_2.png" alt="Politie 2" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-6_3.png" alt="Politie 3" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-6_4.png" alt="Politie 4" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appartementen -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Appartementen</h3>
+                                <p>100% werkende appartementen met alle functies</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery single">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-7.png" alt="Appartementen" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tweedehands -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Tweedehands</h3>
+                                <p>Werkende tweedehands voor voertuigen</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery single">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-8.png" alt="Tweedehands" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HUD -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-square"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>HUD</h3>
+                                <p>TDA HUD met togglehud command</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery double">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-9_1.png" alt="HUD 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-9_2.png" alt="HUD 2" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Esx Boat -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-title-group">
+                            <div class="accordion-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="accordion-title-text">
+                                <h3>Esx Boat</h3>
+                                <p>1:1 esx_boat met helikopter, boot & vliegtuig</p>
+                            </div>
+                        </div>
+                        <div class="accordion-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="accordion-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-10_1.png" alt="Esx Boat 1" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-10_2.png" alt="Esx Boat 2" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-10_3.png" alt="Esx Boat 3" loading="lazy">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/tedeapolis/tda-10_4.png" alt="Esx Boat 4" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Klaar om te starten met Tedeapolis?</h2>
+                <p>Krijg toegang tot de volledige Tedeapolis Remake server met alle features, database, carpack en professionele support.</p>
+                <div class="cta-price-box">
+                    <span class="price-label">Eenmalige betaling</span>
+                    <span class="price-value">25,-</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-primary">
+                        <i class="fab fa-discord"></i>
+                        <span>Open Ticket & Bestel</span>
+                    </a>
+                    <a href="/servers" class="cta-btn cta-btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Andere Servers</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../../assets/images/raytrixpng.png" alt="Raytrix Scripts Logo">
+                        <div class="footer-brand-text">
+                            <span class="brand-name">Raytrix Scripts</span>
+                            <span class="brand-tagline">Servers, scripts & websites</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Premium digitale oplossingen voor FiveM servers, Discord bots en websites. Kwaliteit en betrouwbaarheid gegarandeerd.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigatie</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/producten">Producten</a></li>
+                        <li><a href="/scripts">Scripts</a></li>
+                        <li><a href="/servers">Servers</a></li>
+                        <li><a href="/websites">Websites</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support & Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Algemene Voorwaarden</a></li>
+                        <li><a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer">Discord Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>&copy; 2025 Raytrix Scripts</span>
+                    <span class="footer-dot"></span>
+                    <span>Built for FiveM & Discord</span>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Voorwaarden</a>
+                    <a href="/faq">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Terug naar boven" title="Terug naar boven">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+        <div class="lightbox-content">
+            <img src="" alt="Screenshot" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        // Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionItem = this.parentElement;
+                    const isActive = accordionItem.classList.contains('active');
+                    
+                    // Close all accordion items
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        accordionItem.classList.add('active');
+                    }
+                });
+            });
+
+            // Lightbox functionality for gallery items
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const img = item.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src);
+                    }
+                });
+            });
+        });
+
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raytrix Scripts - Custom FiveM Scripts voor Admin Panel, Store, Playergoal & Events">
+    <link rel="canonical" href="https://www.raytrix.nl/scripts">
+    <meta name="theme-color" content="#3b82f6">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Raytrix Scripts">
+    <meta property="og:title" content="Scripts - Raytrix Scripts">
+    <meta property="og:description" content="Custom FiveM Scripts: Admin Panel, Store Systeem, Playergoal Tracker & Event Scripts. Optimaal en stabiel.">
+    <meta property="og:url" content="https://www.raytrix.nl/scripts">
+    <meta property="og:image" content="https://www.raytrix.nl/assets/images/raytrixpng.png?v=2">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Scripts - Raytrix Scripts">
+    <meta name="twitter:description" content="Custom FiveM Scripts voor jouw server.">
+    <meta name="twitter:image" content="https://www.raytrix.nl/assets/images/raytrixpng.png?v=2">
+    <title>Scripts - Raytrix Scripts</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigatie -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">
+                    <img src="../assets/images/raytrixpng.png" alt="Raytrix Scripts Logo">
+                    <span>Raytrix Scripts</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/producten" class="nav-link">Producten</a>
+                    <a href="/scripts" class="nav-link active">Scripts</a>
+                    <a href="/servers" class="nav-link">Servers</a>
+                    <a href="/websites" class="nav-link">Websites</a>
+                </div>
+                <a href="https://discord.gg/raytrix" class="nav-cta-btn" target="_blank" rel="noopener noreferrer">Start een project</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sectie -->
+    <section class="product-hero-alt" id="top" aria-labelledby="hero-heading" aria-describedby="hero-desc">
+        <div class="hero-bg-layer"></div>
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-panel main-panel">
+                    <div class="hero-panel-inner">
+                        <span class="hero-chip">FiveM Scripts Suite</span>
+                        <h1 id="hero-heading">Custom FiveM Scripts</h1>
+                        <p id="hero-desc" class="hero-lead">Professionele FiveM scripts voor jouw server: Admin management, store systemen, playergoal tracking en event automation. Geoptimaliseerd voor performance en stabiliteit.</p>
+                        <ul class="hero-points">
+                            <li><i class="fas fa-tachometer-alt"></i> Performance optimized</li>
+                            <li><i class="fas fa-shield-alt"></i> Veilig & stabiel</li>
+                            <li><i class="fas fa-cogs"></i> Volledig aanpasbaar</li>
+                        </ul>
+                        <div class="hero-actions">
+                            <a href="https://discord.gg/raytrix" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i> Start via Discord</a>
+                            <a href="#scripts" class="btn btn-secondary"><i class="fas fa-code"></i> Bekijk Scripts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-panel showcase-panel">
+                    <div class="showcase-grid" aria-hidden="true">
+                        <div class="showcase-item">
+                            <div class="sc-icon"><i class="fas fa-user-shield"></i></div>
+                            <span>Admin Panel</span>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="sc-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <span>Store System</span>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="sc-icon"><i class="fas fa-chart-line"></i></div>
+                            <span>Playergoal</span>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="sc-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <span>Event Script</span>
+                        </div>
+                    </div>
+                    <div class="hero-mini-metrics">
+                        <div class="metric"><span class="met-value">200+</span><span class="met-label">Servers</span></div>
+                        <div class="metric"><span class="met-value">99%</span><span class="met-label">Uptime</span></div>
+                        <div class="metric"><span class="met-value">24/7</span><span class="met-label">Support</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Sectie -->
+    <section class="products" id="scripts">
+        <div class="container">
+            <div class="products-header">
+                <span class="section-label">FiveM Scripts</span>
+                <h2 class="section-title">Custom Scripts</h2>
+                <p class="section-description">Professionele FiveM scripts - geoptimaliseerd voor performance, stabiliteit en gebruiksgemak.</p>
+            </div>
+            <div class="product-grid">
+                <!-- Admin Panel -->
+                <article class="product-card-pro product-card-compact" aria-labelledby="script-adminpanel" data-accent="red">
+                    <div class="product-media">
+                        <img src="../assets/images/adminpanel.png" alt="Admin Panel Script" loading="lazy" onerror="this.src='../assets/images/raytrixbanner.png'">
+                        <span class="media-tag"><i class="fas fa-user-shield"></i> Admin Panel</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title" id="script-adminpanel">Admin Panel</h3>
+                        <p class="product-text">Complete server controle met speler management, voertuig spawn en permissions systeem.</p>
+                        <div class="product-meta">
+                            <span class="product-price">€40,-</span>
+                            <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="btn-buy"><i class="fab fa-discord"></i> Bestel</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Store System -->
+                <article class="product-card-pro product-card-compact" aria-labelledby="script-store" data-accent="green" onclick="window.location.href='/pages/scripts/scripts-store'" style="cursor: pointer;">
+                    <div class="product-media">
+                        <img src="../assets/images/store.png" alt="Store System Script" loading="lazy" onerror="this.src='../assets/images/raytrixbanner.png'">
+                        <div class="media-overlay">
+                            <div class="view-screenshots">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Bekijk details</span>
+                            </div>
+                        </div>
+                        <span class="media-tag"><i class="fas fa-shopping-cart"></i> Store System</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title" id="script-store">Store Systeem</h3>
+                        <p class="product-text">Multi-shop oplossing met custom items, categorieën en volledige economy integratie.</p>
+                        <div class="product-meta">
+                            <span class="product-price">€30,-</span>
+                            <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="btn-buy"><i class="fab fa-discord"></i> Bestel</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Refund Script -->
+                <article class="product-card-pro product-card-compact" aria-labelledby="script-refund" data-accent="amber">
+                    <div class="product-media">
+                        <img src="../assets/images/refund.png" alt="Refund Script" loading="lazy" onerror="this.src='../assets/images/raytrixbanner.png'">
+                        <span class="media-tag"><i class="fas fa-undo"></i> Refund Script</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title" id="script-refund">Refund Script</h3>
+                        <p class="product-text">Geautomatiseerd refund systeem voor aankopen met configureerbare regels en admin controle.</p>
+                        <div class="product-meta">
+                            <span class="product-price">€10,-</span>
+                            <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="btn-buy"><i class="fab fa-discord"></i> Bestel</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Playergoal Tracker -->
+                <article class="product-card-pro product-card-compact" aria-labelledby="script-playergoal" data-accent="blue">
+                    <div class="product-media">
+                        <img src="../assets/images/playergoal.png" alt="Playergoal Tracker Script" loading="lazy" onerror="this.src='../assets/images/raytrixbanner.png'">
+                        <span class="media-tag"><i class="fas fa-chart-line"></i> Playergoal</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title" id="script-playergoal">Playergoal Tracker</h3>
+                        <p class="product-text">Track speler voortgang met missies, achievements en XP rewards voor gemotiveerde spelers.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Gratis</span>
+                            <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="btn-buy"><i class="fas fa-gift"></i> Claim</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Script -->
+                <article class="product-card-pro product-card-compact" aria-labelledby="script-event" data-accent="purple">
+                    <div class="product-media">
+                        <img src="../assets/images/event.png" alt="Event Script" loading="lazy" onerror="this.src='../assets/images/raytrixbanner.png'">
+                        <span class="media-tag"><i class="fas fa-calendar-alt"></i> Event Script</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title" id="script-event">Event Script</h3>
+                        <p class="product-text">Automatische events met races, team battles en reward distributie voor engaged community.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Gratis</span>
+                            <a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer" class="btn-buy"><i class="fas fa-gift"></i> Claim</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../assets/images/raytrixpng.png" alt="Raytrix Scripts Logo">
+                        <div class="footer-brand-text">
+                            <span class="brand-name">Raytrix Scripts</span>
+                            <span class="brand-tagline">Servers, scripts & websites</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Premium digitale oplossingen voor FiveM servers, Discord bots en websites. Kwaliteit en betrouwbaarheid gegarandeerd.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigatie</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/producten">Producten</a></li>
+                        <li><a href="/scripts">Scripts</a></li>
+                        <li><a href="/servers">Servers</a></li>
+                        <li><a href="/websites">Websites</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support & Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Algemene Voorwaarden</a></li>
+                        <li><a href="https://discord.gg/raytrix" target="_blank" rel="noopener noreferrer">Discord Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>&copy; 2025 Raytrix Scripts</span>
+                    <span class="footer-dot"></span>
+                    <span>Built for FiveM & Discord</span>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Voorwaarden</a>
+                    <a href="/faq">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Terug naar boven" title="Terug naar boven">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

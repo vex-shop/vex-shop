@@ -233,7 +233,7 @@ ul {
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(0, 0, 0, 0.98);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
@@ -3649,7 +3649,7 @@ section {
     margin-top: 64px;
     padding: 0;
     border-radius: 24px;
-    background: #ffffff;
+    background: #000000;
     border: 1px solid rgba(59, 130, 246, 0.12);
     box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
     display: grid;
@@ -7013,7 +7013,7 @@ section {
    -------------------------------- */
 .ribbon {
     overflow: hidden;
-    background: #f0f7ff;
+    background: #000000;
     border-top: 1px solid rgba(59,130,246,0.1);
     border-bottom: 1px solid rgba(59,130,246,0.1);
     padding: 0;
@@ -7055,7 +7055,7 @@ section {
    -------------------------------- */
 .diensten {
     padding: 110px 0;
-    background: #eef2ff;
+    background: #000000;
     position: relative;
     overflow: hidden;
 }
@@ -7147,8 +7147,8 @@ section {
     flex-direction: column;
     padding: 36px 38px;
     border-radius: 20px;
-    border: 1px solid rgba(203,213,225,0.7);
-    background: linear-gradient(145deg, #ffffff 0%, #f7f9ff 100%);
+    border: 1px solid rgba(36,136,255,0.7);
+    background: linear-gradient(145deg, #232323 0%, #0e0e0e 100%);
     text-decoration: none;
     color: var(--secondary-color);
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -7381,7 +7381,7 @@ section {
    -------------------------------- */
 .waarom {
     padding: 110px 0;
-    background: linear-gradient(160deg, #f8faff 0%, #ffffff 45%, #f5f7ff 100%);
+    background: linear-gradient(160deg, #001751 0%, #000000 45%, #000000 100%);
     position: relative;
     overflow: hidden;
 }
@@ -7541,7 +7541,7 @@ section {
    -------------------------------- */
 .process-v2 {
     padding: 110px 0;
-    background: #ffffff;
+    background: #000000;
     position: relative;
     overflow: hidden;
 }
@@ -7597,7 +7597,7 @@ section {
     border: 1px solid rgba(15,23,42,0.085);
     border-radius: 16px;
     position: relative;
-    background: #ffffff;
+    background: #0e0e0e;
     overflow: hidden;
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }

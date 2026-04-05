@@ -1,5 +1,5 @@
 // ============================================
-// Raytrix Scripts - MAIN JAVASCRIPT
+// Vex Shop - MAIN JAVASCRIPT
 // Interactive Elements & Animations
 // ============================================
 
@@ -366,8 +366,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // CONSOLE MESSAGE
     // ============================================
-    console.log('%c🌊 Raytrix Scripts ', 'background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; font-size: 20px; padding: 10px 20px; border-radius: 5px; font-weight: bold;');
-    console.log('%cPremium Digital Solutions | discord.gg/raytrix', 'color: #10b981; font-size: 14px; padding: 5px;');
+    console.log('%c🌊 Vex Shop ', 'background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; font-size: 20px; padding: 10px 20px; border-radius: 5px; font-weight: bold;');
+    console.log('%cPremium Digital Solutions | discord.gg/faRsgqtxwW', 'color: #10b981; font-size: 14px; padding: 5px;');
     
 });
 

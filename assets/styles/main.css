@@ -2839,7 +2839,7 @@ section {
     padding: 24px;
     gap: 12px;
     flex: 1;
-    background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    background: linear-gradient(180deg, #212121 0%, #000000 100%);
 }
 
 .product-card-compact .product-title {
@@ -2920,7 +2920,7 @@ section {
     display: flex;
     flex-direction: column;
     border-radius: 28px;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(59, 130, 246,0.02) 100%);
+    background: linear-gradient(180deg, #000000 0%, rgba(59, 130, 246,0.02) 100%);
     position: relative;
     overflow: hidden;
     box-shadow: 0 6px 22px rgba(0,0,0,0.06);

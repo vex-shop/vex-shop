@@ -2726,7 +2726,7 @@ section {
 .products {
     position: relative;
     background:
-        linear-gradient(140deg, #ffffff 0%, #dbeafe 60%, #dbeafe 100%),
+        linear-gradient(140deg, #000000 0%, #000000 60%, #000000 100%),
         radial-gradient(circle at 82% 18%, rgba(59, 130, 246,0.10) 0%, transparent 58%),
         radial-gradient(circle at 12% 85%, rgba(96, 165, 250,0.10) 0%, transparent 62%);
     background-blend-mode: normal, screen, screen;
@@ -3091,7 +3091,7 @@ section {
     gap: 18px;
     flex: 1;
     position: relative;
-    background: linear-gradient(180deg, #ffffff 0%, color-mix(in srgb, var(--card-accent) 6%, #ffffff) 100%);
+    background: linear-gradient(180deg, #121212 0%, color-mix(in srgb, var(--card-accent) 6%, #000000) 100%);
     border-top: 1px solid color-mix(in srgb, var(--card-ring) 60%, transparent);
 }
 

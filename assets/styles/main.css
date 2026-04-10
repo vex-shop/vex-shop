@@ -17,7 +17,7 @@
     background:
         radial-gradient(1100px 600px at 85% 35%, rgba(59,130,246,0.15) 0%, rgba(59,130,246,0) 60%),
         radial-gradient(900px 520px at 15% 70%, rgba(96,165,250,0.14) 0%, rgba(96,165,250,0) 65%),
-        linear-gradient(135deg, #93c5fd 0%, #3b82f6 55%, #60a5fa 100%);
+        linear-gradient(135deg, #3e75b3 0%, #28549d 55%, #0a2c56 100%);
     background-blend-mode: screen, screen, normal;
     filter: saturate(1.05);
     z-index: 0;

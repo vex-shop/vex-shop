@@ -3883,13 +3883,13 @@ section {
 }
 
 .websites-band .container { position: relative; z-index: 1; }
-.websites-band .section-title { color: #1f2937; }
+.websites-band .section-title { color: #ffffff; }
 
 .websites-band::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0));
+    background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0));
     pointer-events: none;
     z-index: 0;
 }
@@ -4174,7 +4174,7 @@ section {
 }
 
 .website-type-card {
-    background: #ffffff;
+    background: #121212;
     border-radius: 20px;
     padding: 36px 32px 32px;
     border: 1px solid rgba(59, 130, 246,0.08);

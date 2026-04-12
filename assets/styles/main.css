@@ -2804,7 +2804,7 @@ section {
     left: 16px;
     bottom: 16px;
     padding: 8px 16px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
     color: var(--card-accent-strong);
     font-size: 12px;
@@ -2872,7 +2872,7 @@ section {
     display: inline-flex;
     align-items: center;
     padding: 10px 18px;
-    background: linear-gradient(135deg, var(--card-accent-soft), rgba(255,255,255,0.5));
+    background: linear-gradient(135deg, var(--card-accent-soft), rgba(10,10,10,0.5));
     color: var(--card-accent-strong);
     font-size: 20px;
     font-weight: 800;

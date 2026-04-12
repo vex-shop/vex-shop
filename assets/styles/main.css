@@ -2755,7 +2755,7 @@ section {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    border: 1px solid #e2e8f0;
+    border: 1px solid #000000;
     transition: all 0.4s cubic-bezier(.16,.84,.44,1);
     cursor: pointer;
     min-height: auto;

@@ -3273,10 +3273,7 @@ section {
     padding: 96px 0 86px;
     position: relative;
     overflow: hidden;
-    background:
-        radial-gradient(1200px 720px at 80% 10%, rgba(59,130,246,0.10), transparent 60%),
-        radial-gradient(900px 600px at 12% 80%, rgba(59, 130, 246,0.10), transparent 58%),
-        linear-gradient(145deg, #f8fafc 0%, #e5edff 52%, #f0f6ff 100%);
+    background: radial-gradient(1200px 720px at 80% 10%, rgba(59, 130, 246, 0.10), transparent 60%), radial-gradient(900px 600px at 12% 80%, rgba(59, 130, 246, 0.10), transparent 58%), linear-gradient(145deg, #131313 0%, #000000 52%, #000000 100%);
 }
 
 .websites-section .section-title { color: #1f2937; }
@@ -3287,7 +3284,7 @@ section {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0));
+    background: linear-gradient(180deg, rgb(0 0 0 / 22%), rgba(255,255,255,0));
     z-index: 0;
 }
 

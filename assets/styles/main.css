@@ -3876,7 +3876,7 @@ section {
     background:
         radial-gradient(1100px 700px at 85% 25%, rgba(59, 130, 246,0.12), transparent 60%),
         radial-gradient(900px 600px at 15% 75%, rgba(14,165,233,0.12), transparent 62%),
-        linear-gradient(140deg, #ffffff 0%, #eaf2ff 50%, #dbeafe 100%);
+        linear-gradient(140deg, #0a0a0a 0%, #000000 50%, #000000 100%);
     padding: 96px 0 88px;
     position: relative;
     overflow: hidden;

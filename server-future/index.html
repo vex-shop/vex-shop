@@ -25,7 +25,7 @@
             background:
                 radial-gradient(1100px 600px at 85% 35%, rgba(59,130,246,0.15) 0%, rgba(59,130,246,0) 60%),
                 radial-gradient(900px 520px at 15% 70%, rgba(96,165,250,0.14) 0%, rgba(96,165,250,0) 65%),
-                linear-gradient(135deg, #93c5fd 0%, #3b82f6 55%, #60a5fa 100%);
+                linear-gradient(135deg, #365e8b 0%, #1d54ad 55%, #053169 100%);
             color: #ffffff;
             overflow: hidden;
         }
@@ -93,43 +93,6 @@
             text-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
-        .hero-features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 16px;
-            max-width: 800px;
-            margin: 35px auto 0;
-        }
-
-        .hero-feature-box {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
-            border-radius: 16px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .hero-feature-box:hover {
-            background: rgba(255,255,255,0.25);
-            transform: translateY(-5px);
-            box-shadow: 0 12px 32px rgba(0,0,0,0.3);
-        }
-
-        .hero-feature-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        .hero-feature-label {
-            font-size: 14px;
-            font-weight: 700;
-            color: rgba(255,255,255,0.95);
-            letter-spacing: 0.5px;
-        }
-
         .server-badges {
             display: flex;
             justify-content: center;
@@ -160,7 +123,7 @@
         /* Features Section with Accordion */
         .features-section {
             padding: 60px 0;
-            background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
+            background: linear-gradient(to bottom, #0c0c0c 0%, #000000 100%);
         }
 
         .features-intro {
@@ -191,15 +154,15 @@
         }
 
         .accordion-item {
-            background: #ffffff;
+            background: #101010;
             border-radius: 16px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #042b5f;
             overflow: hidden;
             transition: all 0.3s ease;
         }
 
         .accordion-item.active {
-            border-color: #3b82f6;
+            border-color: #101010;
             box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
         }
 
@@ -214,11 +177,11 @@
         }
 
         .accordion-header:hover {
-            background: #f8fafc;
+            background: #101010;
         }
 
         .accordion-item.active .accordion-header {
-            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            background: linear-gradient(135deg, #101010 0%, #dbeafe 100%);
         }
 
         .accordion-title-group {
@@ -260,7 +223,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #e2e8f0;
+            background: ##00000;
             border-radius: 8px;
             color: #64748b;
             font-size: 16px;
@@ -545,35 +508,6 @@
             transform: translateY(-3px);
         }
 
-        /* Feature Stats */
-        .feature-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin: 50px 0 30px;
-            flex-wrap: wrap;
-        }
-
-        .stat-box {
-            text-align: center;
-        }
-
-        .stat-value {
-            font-size: 48px;
-            font-weight: 800;
-            color: #3b82f6;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            font-weight: 600;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .server-detail-header h1 {
@@ -608,14 +542,6 @@
 
             .cta-price-box .price-value {
                 font-size: 28px;
-            }
-
-            .feature-stats {
-                gap: 30px;
-            }
-
-            .stat-value {
-                font-size: 36px;
             }
         }
     </style>

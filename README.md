@@ -39,4 +39,3 @@ Bestellingen, vragen, support en projectaanvragen verlopen via Discord.
 
 **VEX Shop**
 *Gemaakt door Vex*
-::: 
